@@ -14,5 +14,7 @@ def main():
         for tok in lexer:
             print(f"{tok.type:20} {tok.value!r}   (línea {tok.lineno})")
 
+    input("\nPresiona Enter para terminar...")
+
 if __name__ == "__main__":
     main()
