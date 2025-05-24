@@ -1,21 +1,13 @@
-Algoritmo Prueba
-    Definir a,b,c,d Entero
+Algoritmo SumaMultiplicada
+    Definir i, sum Entero
     Inicio
-        Escribir ("Hola")
-        a = 1
-        b = a + 3
-        c = b
-        Mientras Verdadero
-            Si c > a Entonces
-                d = 8
-                Escribir ("El valor de d es: ", d)
-            Sino 
-                Si a > c Entonces 
-                    d = 5
-                    Escribir ("El valor de d es: ", d)
-                Sino
-                    d = c
-                    Escribir ("El valor de d es: ", d)
+        i = 1
+        sum = 0
+        Mientras i <= 10
+            sum = sum + i
+            i = i + 1
         Fin Mientras
-    Fin 
+        Si sum > 0 Entonces
+            sum = sum * 2
+    Fin
 Fin Algoritmo

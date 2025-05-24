@@ -26,7 +26,7 @@ reserved = {
     'Entonces':  'ENTONCES',
     'Verdadero': 'VERDADERO',
     'Falso':     'FALSO',
-    'Sino':        'SINO'
+    'Sino':      'SINO'
 }
 
 
@@ -72,9 +72,9 @@ def t_newline(t):
     r'\n+'
     t.lexer.lineno += len(t.value)
 
-# Comentarios: ignora desde // hasta fin de línea
+# Comentarios: ignora desde # hasta fin de línea
 def t_COMMENT(t):
-    r'//.*'
+    r'\#.*'
     pass
 
 # Captura errores
